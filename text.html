@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Subscribe Text</title>
+    <link rel="stylesheet" href="text.css">
+</head>
+<body>
+    <h1>
+        <span>S</span>
+        <span>U</span>
+        <span>B</span>
+        <span>S</span>
+        <span>C</span>
+        <span>R</span>
+        <span>I</span>
+        <span>B</span>
+        <span>E</span>
+    </h1>
+
+    <!-- JavaScript logic to add animation -->
+    <script>
+        const spans = document.querySelectorAll("h1 span");
+        spans.forEach((span, index) => {
+            span.style.animationDelay = `${index * 0.1}s`;
+        });
+    </script>
+</body>
+</html>
